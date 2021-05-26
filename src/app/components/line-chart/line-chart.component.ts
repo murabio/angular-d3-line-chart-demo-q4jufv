@@ -50,7 +50,7 @@ export class LineChartComponent implements OnInit {
   private setup(): void {
     console.log('LineChartComponent:setup');
     this.chartData.data = weatherData.observations;
-    this.chartData.locationName = weatherData.locationName.toLocaleUpperCase();
+    //this.chartData.locationName = weatherData.locationName.toLocaleUpperCase();
     this.buildSvg();
   }
 
@@ -305,7 +305,7 @@ export class LineChartComponent implements OnInit {
       .append('path')
       .datum(this.data)
       .attr('fill', 'none')
-      .attr('stroke', 'black')
+      .attr('stroke', 'white')
       .attr('stroke-width', 1.5)
       .attr('stroke-linejoin', 'round')
       .attr('stroke-linecap', 'round')
